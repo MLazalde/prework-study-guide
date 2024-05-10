@@ -94,13 +94,47 @@
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
-        </ul>   
+          <li>To declare a variable in JavaScript, we have a few different options. Prior to more recent changes to JavaScript, we used the var keyword to create a variable in our code. 
+            You may see var from time to time, and it's a valid part of JavaScript, but it's important to note that all modern JavaScript uses new syntax, so we should avoid using var.</li>
+          <li>The first variable keyword we might use is const. The const keyword allows us to create variables that can't be reassigned a value. 
+            It essentially "locks down" what that variable will be, and once we declare it, we can never reassign it. 
+            When writing JavaScript, we always want to start by declaring variables using const. The second variable keyword we might use is let—more on that later.</li>
+          <li>After the const keyword, we give the variable a name. This name must be unique because it is how we will reference the information stored in the variable in our code.</li>
+          <li>Finally, we use an assignment operator = to assign the specific data that we want stored in our variable.</li>
+          <li>An if statement is a way of introducing decision-making into our code. 
+            Just like its name sounds, when using the if statement, code will only execute if the statement meets a condition, or is true.</li>
+          <li>An array is a single variable that is used to hold a group of data. Arrays are typically used to hold data that is related in some way.</li>  
+          <li>To work with individual data items inside an array, we need to have one more piece of information: the location of the data item in the array. 
+            This location is identified with a unique number called an index. Using each piece of data's index, or location number, we can access individual data inside the array.</li>
+          <li>A for loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over. 
+            Developers must use another statement, such as the conditional if statement that we just learned, to interrupt the control flow by executing a block of code a specific number of times.</li>  
+          <li>By using a for loop, we can tell the computer to go through each of the shapes in our array and log them to the console until there are no shapes left. 
+            In order to use the for loop, we need the shape's index and the array's length. The array length is important because the for loop needs to know how many times the code will run until there are no items left in the array. 
+            We can find the length of an array by using a built-in property of an array, appropriately named length.</li>  
+          <li>Before we break down a for loop, let's revisit the topic of variables from earlier in the lesson. 
+            Remember that up until now, we've declared variables using the const keyword, which "locks down" the value of the variable so that it can't be reassigned. 
+            But what if we wanted to reassign the value of the variable over time?</li>  
+          <li>This is where we would use the let keyword. Just like with const, we use let, followed by a unique variable name and the assignment operator = to assign the specific data that we want stored in our variable. 
+            However, unlike with const, let allows us to reassign the value of the variable over time. 
+            This is especially important in cases where we need to use the variable to store changing values, like when iterating over an array using a for loop.</li>  
+          <li>A for loop contains the following three important statements:</li>
+          <li>The first statement determines the starting point for our loop. 
+            Since we want to start at the beginning of the array, we declare a variable x and give it a value of 0 (because the first index of an array is always 0)</li>  
+          <li>The second statement is the condition. As long as the number in the variable x is less than the length of the array, the loop will keep running. 
+            This will allow the loop to execute one time for each item in the array. We use the length built-in array property on our shapes array to express that condition.</li>
+          <li>The final statement is what allows the array to iterate over each item. 
+            Since indices follow a predictable pattern, we know the number increases by 1 each time. 
+            The code x++ is a shortcut way of writing x+1. Now every time the code loops, x will increase by 1</li>
+          <li>When we declare a function in our JavaScript code, we are creating a reusable block of code that performs a specific task. 
+            However, declaring a function does not mean that the code will automatically execute. We need to call the function in the code at the spot we want it to execute.</li>
+          <li>To call a function, we use the name of the function in our JavaScript file where we want the code to execute.</li>
+         </ul>   
       </section>
     </main>
 
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
